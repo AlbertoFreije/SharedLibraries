@@ -1,4 +1,4 @@
-@Library("shared-library") _
+@Library("share-library") _
 pipeline {
     agent any
     tools { 
