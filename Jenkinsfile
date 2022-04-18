@@ -1,3 +1,4 @@
+@Library("shared-library") _
 pipeline {
     agent any
     tools { 
@@ -7,7 +8,7 @@ pipeline {
     stages {
           stage ('example') {
             steps {
-                sh "echo hello world"
+                helloWorld()
             } 
           }
     }
