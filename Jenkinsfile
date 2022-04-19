@@ -1,15 +1,6 @@
-@Library("shared-library") _
-pipeline {
-    agent any
-    tools { 
-        maven 'Maven 3.3.9' 
-        jdk 'jdk8' 
-    }
-    stages {
-          stage ('example') {
-            steps {
-                helloWorld()
-            } 
-          }
-    }
-}
+@Library('pipeline-library-demo')_
+
+ stage('Demo') {
+     echo 'Hello world'
+     sayHello 'Dave'
+ }
